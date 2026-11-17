@@ -22,7 +22,7 @@ def quality_rows(report):
 
 
 def report_evolution(before: dict, after: dict):
-    """Compare le rapport initiale et la note réparée, affirmation par affirmation."""
+    """Compare le rapport initiale et le rapport réparée, affirmation par affirmation."""
     before_by_id = {item.get("id"): item for item in before.get("claims", [])}
     after_by_id = {item.get("id"): item for item in after.get("claims", [])}
     rows = []
